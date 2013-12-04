@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!--[if IE 6]>
+        <script type="text/javascript" src="./js/DD_belatedPNG.js"></script>
+        <script language="javascript" type="text/javascript">
+        DD_belatedPNG.fix(".png,.png img,.login_btn_bg");
+        </script>
+    <![endif]-->
+</head>
+<body>
+	<div class="header">
+		<div class="area">
+			<div class="logo"></div>
+			<div class="hd_link">
+				<a href="">关于平台</a>
+				<span>|</span>
+				<a href="">收藏此页</a>
+				<span>|</span>
+				<a href="">反馈</a>
+			</div>
+		</div>
+	</div>
+	<div class="banner_area" id="banner_list">
+		<div class="login_box">
+			<div class="login_cont png">
+				<div class="login_form">
+					<div class="loginFormInp login_btn_bg">
+						<b class="ico ico-code png"></b>
+						<input type="text" name="enpCode" id="enpCode" class="loginFormTdIpt">
+						<label for="enpCode" class="placeholder" id="enPlaceholder">企业编码</label>
+					</div>
+					<div class="loginFormInp login_btn_bg">
+						<b class="ico ico-uid png"></b>
+						<input type="text" name="login_name" id="login_name" class="loginFormTdIpt">
+						<label for="login_name" class="placeholder" id="namePlaceholder">用户名</label>
+					</div>
+					<div class="loginFormInp login_btn_bg">
+						<b class="ico ico-pwd png"></b>
+						<input type="password" name="login_pwd" id="login_pwd" class="loginFormTdIpt">
+						<label for="login_pwd" class="placeholder" id="pwdPlaceholder">密码</label>
+					</div>
+					<div class="verify login_btn_bg">
+						<div class="sInp">
+							<input type="text" name="code" id="code" class="loginFormTdIpt" maxlength="4">
+							<label for="code" class="placeholder" id="codePlaceholder">验证码</label>
+						</div>
+						<img src="images/code.gif" alt="" id="verify_code">
+					</div>
+					<p class="forget_pwd"><a href="">忘记密码了？</a></p>
+					<a href="javascript:;" id="loginSub" class="loginSub login_btn_bg">登录</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="banner_box banner_ui">
+			<div class="ban1 anim png">
+				<div class="banner_cont">
+					<div class="area ">
+						<div class="ban1_anim_chart png an0"></div>
+						<div class="ban1_anim_bg png an0"></div>
+						<div class="ban1_anim_bg2 png an0"></div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="banner_box banner_red">
+			<div class="ban2">
+				<div class="banner_cont">
+					<div class="area ">
+						<div id="mod_blo">
+							<ul>
+								<li class="an1"><img src="images/ban2/a1.jpg" alt=""></li>
+								<li class="an1"><img src="images/ban2/a2.jpg" alt=""></li>
+								<li></li>
+								<li class="an1"><img src="images/ban2/a4.jpg" alt=""></li>
+								<li class="an1"><img src="images/ban2/a5.jpg" alt=""></li>
+								<li class="an1"><img src="images/ban2/a6.jpg" alt=""></li>
+								<li class="an1"><img src="images/ban2/a7.jpg" alt=""></li>
+								<li class="an1"><img src="images/ban2/a8.jpg" alt=""></li>
+								<li class="an1"><img src="images/ban2/a9.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="mod_text_1 png an1"></div>
+						<div class="mod_text_2 png an1"></div>
+						<div id="mode_ico" class="png an1">
+							<ul>
+								<li class="m1 an1"><img src="images/ban2/01.png" alt=""></li>
+								<li class="m2 an1"><img src="images/ban2/02.png" alt=""></li>
+								<li class="m3 an1"><img src="images/ban2/03.png" alt=""></li>
+								<li class="m4 an1"><img src="images/ban2/04.png" alt=""></li>
+								<li class="m5 an1"><img src="images/ban2/05.png" alt=""></li>
+								<li class="m6 an1"><img src="images/ban2/06.png" alt=""></li>
+								<li class="m7 an1"><img src="images/ban2/07.png" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="banner_box banner_blue">
+			<div class="ban3 ">
+				<div class="banner_cont png">
+					<div class="area ">
+						<div class="showPic pc1 an2">
+							<img src="images/ban3/pc1.png" alt="">
+						</div>
+						<div class="showPic pc2 an2">
+							<img src="images/ban3/pc2.png" alt="">
+						</div>
+						<div class="showPic pc3 an2">
+							<img src="images/ban3/pc2.png" alt="">
+						</div>
+						<div class="showPic pc4 an2">
+							<img src="images/ban3/pc.png" alt="">
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="switch">
+			<div class="switch_cont">
+				<a id="prev" class="png"></a>
+				<a id="next" class="png"></a>
+			</div>
+		</div>
+
+	</div>
+	<div class="footer">Copyright© 2013 All rights reserved</div>
+	<div id="errorAlert" class=" errorAlert-show" >
+				<div class="error-hd"></div>
+				<div class="error-mid">
+					<div class="error-tt">
+						<p id="errorTitle">请先输入您的企业编码</p>
+					</div>
+				</div>
+				<div class="error-ft"></div>
+				<div id="errorArr" class="error-arrow" style="top: 25px;"></div>
+			</div>
+	<script src="./js/jquery-1.7.1.min.js"></script>
+	<script src="./js/jquery.slide.min.js"></script>
+	<script src="./js/cookieUtil.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.loginFormTdIpt').focus(function(){
+				$(this).parent().addClass('inp_focus');
+			}).blur(function(){
+				$(this).parent().removeClass('inp_focus');
+			}).keypress(function(){
+				$(this).next(".placeholder").css({'visibility':'hidden'});
+			}).blur(function(){
+				if(!$(this).val()){
+					$(this).next(".placeholder").css({'visibility':'visible'});
+				}
+			})
+			//获取上次选中的banner
+			var bIndex=parseInt(cookieUtil.getCookie("banner"));
+			$('#banner_list').empSlide({"_index":bIndex});
+			
+		});
+	</script>
+</body>
+</html>
